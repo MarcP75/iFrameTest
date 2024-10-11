@@ -13,17 +13,16 @@
 
 <script type="text/javascript"> 
     function resize_me() {
-        const myWidth = document.getElementById('mywidth').value
-        window.parent.postMessage("{resize}", "*");
-        //alert ("Resize me "+myWidth);
+        const myHeight = document.getElementById('myheight').value
+        window.parent.postMessage("{\"action\":\"resize\",\"height\":"+myHeight+"}", "*");     
     }
-
-
+    
 </script>
 </head>
 <body>
     <h1>Test to work on the resizing</h1>
-    <input type="text" id="mywidth"/>
+    Height:
+    <input type="text" id="myHeight" />
     <button onclick="resize_me()">Hello world</button>
 </body>
 </html>
