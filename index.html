@@ -14,7 +14,7 @@
 <script type="text/javascript"> 
     function resize_me() {
         const myHeight = document.getElementById('myHeight').value
-        window.parent.postMessage("{\"action\":\"resize\",\"height\":"+myHeight+"}", "*");     
+        window.parent.postMessage("{\"action\":\"resize\",\"height\":\""+myHeight+"\"}", "*");     
     }
 
 </script>
