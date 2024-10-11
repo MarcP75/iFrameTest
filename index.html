@@ -14,7 +14,8 @@
 <script type="text/javascript"> 
     function resize_me() {
         const myWidth = document.getElementById('mywidth').value
-        alert ("Resize me "+myWidth);
+        window.parent.postMessage("{resize}", "*");
+        //alert ("Resize me "+myWidth);
     }
 
 
