@@ -19,8 +19,11 @@
 
     function fill_text(linesCount){
         const myHeight = document.getElementById('myHeight').value;
+        var myDiv = document.getElementById('mycont');
+        myDiv.innerHTML = "";
+
         for (let i = 0;i<myHeight;i++){
-            document.getElementById('mycont').innerHTML += 'Hahahahahh<br>';
+            myDiv.innerHTML += 'Hahahahahh<br>';
         }
     }
 
