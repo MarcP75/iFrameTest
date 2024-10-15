@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<!-- Für das JavaScript brauchst du jquery. Das kannst du dir auch mal anschauen. Das ist super. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript"> 
+    function resize_me() {
+        const myHeight = document.getElementById('myHeight').value
+        window.parent.postMessage("{\"action\":\"resize\",\"height\":\""+myHeight+"\"}", "*");     
+    }
+
+    function fill_text(lines){
+        document.getElementById('mycont').content = 'Hahahahahh';
+        //for (i = 0;i<lines;i++){
+            
+        //}
+    }
+
+</script>
+</head>
+<body style="overflow: hidden;">
+    <h1>Test to work on the resizing</h1>
+    Height:
+    <input type="text" id="myHeight" />
+    <button onclick="fill_text(500)">Resize iFrame</button>
+    <div id="mycont">
+
+    </div>
+</body>
+</html>
