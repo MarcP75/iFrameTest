@@ -18,9 +18,8 @@
     }
 
     function fill_text(linesCount){
-        
-        for (let i = 0;i<linesCount;i++){
-            console.log("Line");
+        const myHeight = document.getElementById('myHeight').value;
+        for (let i = 0;i<myHeight;i++){
             document.getElementById('mycont').innerHTML += 'Hahahahahh<br>';
         }
     }
@@ -32,7 +31,7 @@
     Height:
     <input type="text" id="myHeight" />
     <button onclick="fill_text(500)">Resize iFrame</button>
-    <div id="mycont">
+    <div id="mycont" style="overflow: auto;"> 
 
     </div>
 </body>
