@@ -17,10 +17,11 @@
         window.parent.postMessage("{\"action\":\"resize\",\"height\":\""+myHeight+"\"}", "*");     
     }
 
-    function fill_text(lines){
+    function fill_text(linesCount){
         
-        for (i = 0;i<lines;i++){
-           document.getElementById('mycont').innerHTML += 'Hahahahahh<br>';
+        for (let i = 0;i<linesCount;i++){
+            console.log("Line");
+            document.getElementById('mycont').innerHTML += 'Hahahahahh<br>';
         }
     }
 
